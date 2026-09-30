@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro Noticias Huila - Información que conecta al Huila con Colombia y el mundo.">
+    <title>Contáctanos | Centro Noticias Huila</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     ENCABEZADO
+===================================================== -->
+<header class="header">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <a href="index.html" class="logo-button">
+            <img src="imagen/logo.png" alt="Centro Noticias Huila">
+        </a>
+
+        <!-- MENÚ -->
+        <nav class="navigation" id="navigation">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="nosotros.html" class="nav-link">Quiénes somos</a>
+            <a href="index.html#contenido" class="nav-link">Contenido</a>
+            <a href="servicios.html" class="nav-link">Servicios</a>
+            <a href="contacto.html" class="nav-link active">Contacto</a>
+        </nav>
+
+        <!-- BOTÓN MÓVIL -->
+        <button class="menu-button" id="menuButton" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- =====================================================
+     CONTENIDO PRINCIPAL
+===================================================== -->
+<main id="app">
+    <section class="page active" id="contacto">
+
+        <div class="internal-hero">
+            <span>CENTRO NOTICIAS HUILA</span>
+            <h1>Contáctanos</h1>
+            <p>Estamos disponibles para recibir tus noticias, propuestas, consultas o resolver cualquier inquietud.</p>
+        </div>
+
+        <section class="about-block">
+            <div class="container">
+                
+                <div class="contact-page-grid">
+
+                    <!-- COLUMNA IZQUIERDA: FORMULARIO SIMPLE -->
+                    <div class="contact-form-container">
+                        <span class="section-label">ENVÍANOS UN MENSAJE</span>
+                        <h2>Escríbenos directamente</h2>
+                        <p class="form-subtext">Completa los campos básicos y nos pondremos en contacto contigo a la mayor brevedad.</p>
+
+                        <!-- Formulario simple con nombre, correo y mensaje -->
+                        <form id="contactForm" class="styled-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana María Pérez" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                            </div>
+
+                            <!-- Aviso de privacidad integrado -->
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacidad" required>
+                                    <span>Acepto el uso responsable de mis datos personales para fines de contacto y respuesta a esta solicitud.</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- COLUMNA DERECHA: UBICACIÓN, HORARIOS Y WHATSAPP -->
+                    <div class="contact-info-container">
+                        
+                        <!-- Ubicación y Horarios -->
+                        <div class="info-card-box">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <h3>Nuestra Oficina</h3>
+                            <p>Calle Principal # 12-34, Oficina 201<br>campoalegre, Huila - Colombia</p>
+                        </div>
+
+                        <div class="info-card-box">
+                            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                            <h3>Horarios de Atención</h3>
+                            <p><strong>Lunes a Viernes:</strong> 8:00 a.m. – 6:00 p.m.<br>
+                               <strong>Sábados:</strong> 9:00 a.m. – 1:00 p.m.<br>
+                               <span class="schedule-note">Atención al público y recepción de contenidos.</span></p>
+                        </div>
+
+                        <!-- Alternativa rápida WhatsApp / QR -->
+                        <div class="info-card-box whatsapp-box">
+                            <div class="info-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+                            <h3>Canal Rápido</h3>
+                            <p>¿Prefieres una respuesta inmediata? Escríbenos por WhatsApp o escanea nuestro código QR.</p>
+                            
+                            <a href="#" id="whatsappLink" class="whatsapp-button" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp
+                            </a>
+
+                            <div class="qr-inline-container">
+                                <div id="qrcode"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer>
+    <div class="footer-inner">
+        <div>
+            <strong>CENTRO NOTICIAS HUILA</strong>
+            <p>La información que conecta al Huila.</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" id="footerWhatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="copyright">
+        © 2026 Centro Noticias Huila
+    </div>
+</footer>
+
+<!-- QR SCRIPT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<!-- JAVASCRIPT PRINCIPAL -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

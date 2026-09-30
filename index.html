@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Centro Noticias Huila - Información que conecta al Huila con Colombia y el mundo."
+    >
+
+    <title>Centro Noticias Huila</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- ICONOS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     ENCABEZADO
+===================================================== -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+
+        <!-- LOGO -->
+
+        <button
+            class="logo-button"
+            data-page="inicio"
+        >
+
+            <img
+                src="imagen/logo.png"
+                alt="Centro Noticias Huila"
+            >
+
+        </button>
+
+
+        <!-- MENÚ -->
+
+        <nav
+            class="navigation"
+            id="navigation"
+        >
+
+            <button
+                data-page="inicio"
+                class="nav-link active"
+            >
+                Inicio
+            </button>
+
+            <a
+                href="nosotros.html"
+                class="nav-link"
+            >
+                Nosotros
+            </a>
+
+           
+            <a
+                href="servicios.html"
+                class="nav-link"
+            >
+                Servicios
+            </a>
+
+           <a
+                href="contacto.html"
+                class="nav-link"
+            >
+                Contacto
+            </a>
+
+        </nav>
+
+
+        <!-- BOTÓN MÓVIL -->
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Abrir menú"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     CONTENEDOR DE TODAS LAS PÁGINAS
+===================================================== -->
+
+<main id="app">
+
+
+<!-- =====================================================
+     ===================== INICIO ========================
+===================================================== -->
+
+<section
+    class="page active"
+    id="inicio"
+>
+
+
+    <!-- HERO PARALLAX (pieza por pieza) -->
+
+    <section class="hero-track" id="heroTrack">
+
+        <div class="hero-sticky" id="heroSticky">
+
+            <h1 class="sr-only">
+                Centro Noticias Huila: la información que conecta al Huila y al mundo
+            </h1>
+
+            <!--
+                ESCENARIO 16:9. Cada capa es un PNG de 1920x1080
+                transparente; juntas forman el póster completo.
+                data-move="separar" -> se separan al bajar
+                data-move="zoom"    -> hacen zoom
+            -->
+
+            <div class="poster" id="poster">
+
+                <!-- texto + botón (izquierda) -->
+                <div class="layer layer-1" data-move="separar">
+                    <img src="imagen/Mesa1.png" alt="" draggable="false">
+                    <button
+                        class="hotspot"
+                        data-page="contenido"
+                        aria-label="Ver noticias"
+                    ></button>
+                </div>
+
+                <!-- categorías (abajo izquierda) -->
+                <div class="layer layer-2" data-move="separar">
+                    <img src="imagen/Mesa2.png" alt="" draggable="false">
+                </div>
+
+                <!-- MINI MAPA hexagonal (ZOOM) -->
+                <div class="layer layer-3" data-move="zoom">
+                    <img src="imagen/Mesa3.png" alt="" draggable="false">
+                </div>
+
+                <!-- puente (arriba derecha) -->
+                <div class="layer layer-4" data-move="separar">
+                    <img src="imagen/Mesa4.png" alt="" draggable="false">
+                </div>
+
+                <!-- cascada + síguenos (abajo derecha) -->
+                <div class="layer layer-5" data-move="separar">
+                    <img src="imagen/Mesa5.png" alt="" draggable="false">
+                </div>
+
+                <!-- deportes / opinión (abajo centro) -->
+                <div class="layer layer-6" data-move="separar">
+                    <img src="imagen/Mesa6.png" alt="" draggable="false">
+                </div>
+
+                <!-- LOGO (ZOOM) -->
+                <div class="layer layer-logo" data-move="zoom">
+                    <img
+                        class="poster-logo"
+                        src="imagen/logo.png"
+                        alt="Centro Noticias Huila"
+                        draggable="false"
+                    >
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Desliza</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PROPUESTA DE VALOR + CTA -->
+
+    <section class="intro-section">
+
+        <div class="container">
+
+            <span class="section-label">CENTRO NOTICIAS HUILA</span>
+
+            <h2>La información que conecta al Huila y al mundo</h2>
+
+            <p>
+                Comprometidos con la verdad, conectados con nuestra gente.
+                Noticias, cultura, deportes y opinión de la tierra de gente grande.
+            </p>
+
+            <div class="cta-row">
+                <button class="btn btn-primary" data-page="contenido">
+                    <i class="fa-solid fa-newspaper"></i> Ver noticias
+                </button>
+                <button class="btn btn-red" data-page="servicios">
+                    <i class="fa-solid fa-bullhorn"></i> Anunciar con nosotros
+                </button>
+                <button class="btn btn-ghost" data-page="contacto">
+                    Contactar
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESUMEN DE SERVICIOS -->
+
+    <section class="home-block">
+
+        <div class="container">
+
+            <div class="block-head">
+                <span class="section-label">LO QUE HACEMOS</span>
+                <h2>Servicios para tu empresa u organización</h2>
+            </div>
+
+            <div class="services-grid compact">
+
+                <button class="service-card" data-page="servicios">
+                    <i class="fa-solid fa-camera"></i>
+                    <h3>Cobertura periodística</h3>
+                    <p>Eventos, actividades y acontecimientos cubiertos con rigor.</p>
+                    <span class="card-link">Saber más →</span>
+                </button>
+
+                <button class="service-card" data-page="servicios">
+                    <i class="fa-solid fa-video"></i>
+                    <h3>Producción audiovisual</h3>
+                    <p>Contenido en video y foto para todas las plataformas.</p>
+                    <span class="card-link">Saber más →</span>
+                </button>
+
+                <button class="service-card" data-page="servicios">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Publicidad</h3>
+                    <p>Espacios para que tu marca llegue a la audiencia huilense.</p>
+                    <span class="card-link">Saber más →</span>
+                </button>
+
+                <button class="service-card" data-page="servicios">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <h3>Difusión digital</h3>
+                    <p>Publicación y difusión de tus contenidos en nuestras redes.</p>
+                    <span class="card-link">Saber más →</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRUEBAS SOCIALES -->
+
+    <section class="home-block proof">
+
+        <div class="container">
+
+            <div class="block-head">
+                <span class="section-label">CONFIANZA</span>
+                <h2>Lo que dicen de nosotros</h2>
+            </div>
+
+            <!-- REEMPLAZA estos textos por testimonios reales -->
+            <div class="testimonials">
+
+                <figure class="testimonial">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>
+        gracias a centro noticias huila por ayudarno a ubicar a peronas que son malas y saber lo que esta pasando a nuestro bello pueblo.
+                    </blockquote>
+                    <figcaption><strong>maria rodriguez </strong><span>Cargo · Empresa</span></figcaption>
+                </figure>
+
+                <figure class="testimonial">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>
+                        hagradecida por las personas que por su esfuerzo nos informa lo que esta pasando en el territorio huilense muchas gracias por su dedicacion.
+                    </blockquote>
+                    <figcaption><strong>sara yunda</strong><span>Cargo · Empresa</span></figcaption>
+                </figure>
+
+                <figure class="testimonial">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>
+                gracias por presentar a la comunidad nuestros productos para ser reconocidos  y brindarle un buen trato a nuestros clientes atraves de sus redes sociales .
+                    </blockquote>
+                    <figcaption><strong>antonio salazar </strong><span>Cargo · Empresa</span></figcaption>
+                </figure>
+
+            </div>
+
+            <!-- REEMPLAZA cada .partner por <img src="imagen/aliado1.png" alt="Nombre"> -->
+            <p class="partners-title">Aliados y marcas que confían en nosotros</p>
+
+            <div class="partners">
+                <div class="partner">Olimpica</div>
+                <div class="partner">mia cafe</div>
+                <div class="partner">hospital del rosario</div>
+                <div class="partner">alcaldia municipal de campoalegre</div>
+                <div class="partner">policia nacional</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LLAMADA FINAL -->
+
+    <section class="final-cta">
+
+        <div class="container">
+
+            <h2>¿Tienes una noticia o quieres anunciar con nosotros?</h2>
+
+            <p>Escríbenos y te respondemos directamente por WhatsApp.</p>
+
+            <button class="btn btn-white" data-page="contacto">
+                <i class="fa-brands fa-whatsapp"></i> Contáctanos
+            </button>
+
+        </div>
+
+    </section>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ================= QUIÉNES SOMOS =====================
+===================================================== -->
+
+<!-- =====================================================
+     ==================== CONTENIDO ======================
+===================================================== -->
+
+<section
+    class="page"
+    id="contenido"
+>
+
+
+    <div class="internal-hero">
+
+        <span>
+            ACTUALIDAD
+        </span>
+
+        <h1>
+            Contenido
+        </h1>
+
+        <p>
+            Selecciona una categoría para consultar
+            su contenido.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="content-grid">
+
+
+            <!-- ECONOMÍA -->
+
+            <article
+                class="content-card"
+                data-page="economia"
+            >
+
+                <div
+                    class="content-image"
+                    style="
+                    background-image:
+                    url('assets/economia.jpg');
+                    "
+                ></div>
+
+                <div class="content-card-body">
+
+                    <span>
+                        ACTUALIDAD
+                    </span>
+
+                    <h2>
+                        Economía
+                    </h2>
+
+                    <p>
+                        Noticias económicas,
+                        empresas y emprendimientos
+                        de nuestra región.
+                    </p>
+
+                    <button>
+                        Ver Economía
+                        →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CULTURA -->
+
+            <article
+                class="content-card"
+                data-page="cultura"
+            >
+
+                <div
+                    class="content-image"
+                    style="
+                    background-image:
+                    url('assets/cultura.jpg');
+                    "
+                ></div>
+
+                <div class="content-card-body">
+
+                    <span>
+                        IDENTIDAD
+                    </span>
+
+                    <h2>
+                        Cultura
+                    </h2>
+
+                    <p>
+                        Tradiciones, eventos,
+                        arte y patrimonio huilense.
+                    </p>
+
+                    <button>
+                        Ver Cultura
+                        →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- DEPORTES -->
+
+            <article
+                class="content-card"
+                data-page="deportes"
+            >
+
+                <div
+                    class="content-image"
+                    style="
+                    background-image:
+                    url('assets/deportes.jpg');
+                    "
+                ></div>
+
+                <div class="content-card-body">
+
+                    <span>
+                        DEPORTES
+                    </span>
+
+                    <h2>
+                        Deportes
+                    </h2>
+
+                    <p>
+                        Actualidad deportiva y
+                        protagonistas de nuestra región.
+                    </p>
+
+                    <button>
+                        Ver Deportes
+                        →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- OPINIÓN -->
+
+            <article
+                class="content-card"
+                data-page="opinion"
+            >
+
+                <div
+                    class="content-image"
+                    style="
+                    background-image:
+                    url('assets/opinion.jpg');
+                    "
+                ></div>
+
+                <div class="content-card-body">
+
+                    <span>
+                        ANÁLISIS
+                    </span>
+
+                    <h2>
+                        Opinión
+                    </h2>
+
+                    <p>
+                        Perspectivas, análisis y
+                        diferentes voces.
+                    </p>
+
+                    <button>
+                        Ver Opinión
+                        →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ===================== ECONOMÍA ======================
+===================================================== -->
+
+<section
+    class="page category-page"
+    id="economia"
+>
+
+
+    <div class="category-header green">
+
+        <span>
+            ACTUALIDAD REGIONAL
+        </span>
+
+        <h1>
+            Economía
+        </h1>
+
+        <p>
+            Información económica,
+            empresas, comercio y emprendimientos.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="news-grid">
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    ECONOMÍA
+                </div>
+
+                <div class="news-body">
+
+                    <span>
+                        ECONOMÍA
+                    </span>
+
+                    <h2>
+                        Noticias económicas
+                    </h2>
+
+                    <p>
+                        Aquí podrás colocar tus
+                        noticias y publicaciones.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    EMPRESAS
+                </div>
+
+                <div class="news-body">
+
+                    <span>
+                        EMPRESAS
+                    </span>
+
+                    <h2>
+                        Empresas y emprendimientos
+                    </h2>
+
+                    <p>
+                        Espacio para tus contenidos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ====================== CULTURA ======================
+===================================================== -->
+
+<section
+    class="page category-page"
+    id="cultura"
+>
+
+
+    <div class="category-header red">
+
+        <span>
+            IDENTIDAD HUILENSE
+        </span>
+
+        <h1>
+            Cultura
+        </h1>
+
+        <p>
+            Tradiciones, festividades,
+            arte, música y patrimonio.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="news-grid">
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    CULTURA
+                </div>
+
+                <div class="news-body">
+
+                    <span>
+                        CULTURA
+                    </span>
+
+                    <h2>
+                        Tradiciones del Huila
+                    </h2>
+
+                    <p>
+                        Aquí podrás colocar tus
+                        contenidos culturales.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    EVENTOS
+                </div>
+
+                <div class="news-body">
+
+                    <span>
+                        EVENTOS
+                    </span>
+
+                    <h2>
+                        Eventos culturales
+                    </h2>
+
+                    <p>
+                        Información sobre eventos
+                        y festividades.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ===================== DEPORTES ======================
+===================================================== -->
+
+<section
+    class="page category-page"
+    id="deportes"
+>
+
+
+    <div class="category-header green">
+
+        <span>
+            ACTUALIDAD DEPORTIVA
+        </span>
+
+        <h1>
+            Deportes
+        </h1>
+
+        <p>
+            Noticias deportivas,
+            eventos y protagonistas.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="news-grid">
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    DEPORTES
+                </div>
+
+                <div class="news-body">
+
+                    <span>
+                        DEPORTES
+                    </span>
+
+                    <h2>
+                        Actualidad deportiva
+                    </h2>
+
+                    <p>
+                        Aquí podrás colocar tus
+                        noticias deportivas.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ====================== OPINIÓN ======================
+===================================================== -->
+
+<section
+    class="page category-page"
+    id="opinion"
+>
+
+
+    <div class="category-header dark">
+
+        <span>
+            ANÁLISIS
+        </span>
+
+        <h1>
+            Opinión
+        </h1>
+
+        <p>
+            Perspectivas, análisis y diferentes voces.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="news-grid">
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    OPINIÓN
+                </div>
+
+                <div class="news-body">
+
+                    <span>
+                        OPINIÓN
+                    </span>
+
+                    <h2>
+                        Análisis regional
+                    </h2>
+
+                    <p>
+                        Aquí podrás colocar tus
+                        artículos de opinión.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ====================== CONTACTO =====================
+===================================================== -->
+
+<section
+    class="page"
+    id="contacto"
+>
+
+
+    <div class="internal-hero">
+
+        <span>
+            CENTRO NOTICIAS HUILA
+        </span>
+
+        <h1>
+            Contáctanos
+        </h1>
+
+        <p>
+            Estamos disponibles para recibir
+            tus noticias, propuestas y consultas.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+
+            <div class="contact-text">
+
+                <span class="section-label">
+                    HABLEMOS
+                </span>
+
+                <h2>
+                    Comunícate con nosotros
+                </h2>
+
+                <p>
+
+                    Escríbenos directamente por
+                    WhatsApp o escanea nuestro
+                    código QR.
+
+                </p>
+
+
+                <a
+                    href="#"
+                    id="whatsappLink"
+                    class="whatsapp-button"
+                    target="_blank"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Contactar por WhatsApp
+
+                </a>
+
+            </div>
+
+
+            <div class="qr-container">
+
+                <h2>
+                    Escanea el QR
+                </h2>
+
+                <div id="qrcode"></div>
+
+                <p>
+                    El código te llevará directamente
+                    a nuestro WhatsApp.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-inner">
+
+
+        <div>
+
+            <strong>
+                CENTRO NOTICIAS HUILA
+            </strong>
+
+            <p>
+                La información que conecta al Huila.
+            </p>
+
+        </div>
+
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+                href="#"
+                id="footerWhatsapp"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Centro Noticias Huila
+
+    </div>
+
+</footer>
+
+
+
+<!-- QR -->
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+></script>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

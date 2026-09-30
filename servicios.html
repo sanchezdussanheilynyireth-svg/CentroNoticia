@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Centro Noticias Huila - Información que conecta al Huila con Colombia y el mundo."
+    >
+
+    <title>Servicios | Centro Noticias Huila</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- ICONOS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     ENCABEZADO
+===================================================== -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+
+        <!-- LOGO -->
+
+        <button
+            class="logo-button"
+            data-page="inicio"
+        >
+
+            <img
+                src="imagen/logo.png"
+                alt="Centro Noticias Huila"
+            >
+
+        </button>
+
+
+        <!-- MENÚ -->
+
+        <nav
+            class="navigation"
+            id="navigation"
+        >
+
+            <button
+                data-page="inicio"
+                class="nav-link"
+            >
+                Inicio
+            </button>
+
+            <a
+                href="nosotros.html"
+                class="nav-link"
+            >
+                Quiénes somos
+            </a>
+
+            <button
+                data-page="contenido"
+                class="nav-link"
+            >
+                Contenido
+            </button>
+
+            <a
+                href="servicios.html"
+                class="nav-link active"
+            >
+                Servicios
+            </a>
+
+            <button
+                data-page="contacto"
+                class="nav-link"
+            >
+                Contacto
+            </button>
+
+        </nav>
+
+
+        <!-- BOTÓN MÓVIL -->
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Abrir menú"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     CONTENEDOR DE TODAS LAS PÁGINAS
+===================================================== -->
+
+<main id="app">
+
+<section
+    class="page active"
+    id="servicios"
+>
+
+    <!-- HERO -->
+
+    <div class="internal-hero">
+        <span>SERVICIOS</span>
+        <h1>Comunicación que pone tu marca en boca de todo el Huila</h1>
+        <p>
+            Cobertura periodística, producción audiovisual y publicidad para empresas,
+            instituciones y emprendedores que quieren ser vistos, creídos y recordados.
+        </p>
+        <div class="cta-row">
+            <a class="btn btn-white" data-whatsapp="Hola, quiero pedir un presupuesto." target="_blank" rel="noopener"><i class="fa-solid fa-file-invoice-dollar"></i> Pedir presupuesto</a>
+            <a class="btn btn-ghost light" data-whatsapp="Hola, quisiera agendar una cita para hablar de sus servicios." target="_blank" rel="noopener"><i class="fa-regular fa-calendar-check"></i> Agendar una cita</a>
+        </div>
+    </div>
+
+
+    <!-- SERVICIOS -->
+
+    <section class="about-block">
+        <div class="container">
+
+            <div class="block-head">
+                <span class="section-label">LO QUE HACEMOS POR TI</span>
+                <h2>Soluciones para cada objetivo</h2>
+            </div>
+
+            <div class="svc-grid">
+
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Cobertura periodística</h3>
+                    <p class="svc-benefit">Que tu evento o noticia llegue a toda la región, contado con rigor y a tiempo.</p>
+                    <ul><li><i class="fa-solid fa-circle-check"></i> Notas y fotografías el mismo día</li><li><i class="fa-solid fa-circle-check"></i> Publicación en web y redes</li><li><i class="fa-solid fa-circle-check"></i> Credibilidad de un medio local</li></ul>
+                    <p class="svc-ideal"><strong>Ideal para:</strong> instituciones, eventos, gremios y empresas.</p>
+                    <a class="svc-link" data-whatsapp="Hola, me interesa el servicio de Cobertura periodística. ¿Me pueden dar más información?" target="_blank" rel="noopener">Consultar este servicio →</a>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-video"></i></div>
+                    <h3>Producción audiovisual</h3>
+                    <p class="svc-benefit">Videos y fotos profesionales que hacen que tu marca se vea y se recuerde.</p>
+                    <ul><li><i class="fa-solid fa-circle-check"></i> Video corporativo, reportajes y reels</li><li><i class="fa-solid fa-circle-check"></i> Guion, grabación y edición</li><li><i class="fa-solid fa-circle-check"></i> Formatos listos para cada red</li></ul>
+                    <p class="svc-ideal"><strong>Ideal para:</strong> marcas que quieren destacar en redes.</p>
+                    <a class="svc-link" data-whatsapp="Hola, me interesa el servicio de Producción audiovisual. ¿Me pueden dar más información?" target="_blank" rel="noopener">Consultar este servicio →</a>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Publicidad</h3>
+                    <p class="svc-benefit">Ponte frente a la audiencia huilense que ya nos lee y confía en nosotros.</p>
+                    <ul><li><i class="fa-solid fa-circle-check"></i> Banners y notas patrocinadas</li><li><i class="fa-solid fa-circle-check"></i> Menciones en nuestras plataformas</li><li><i class="fa-solid fa-circle-check"></i> Segmentación por tema y región</li></ul>
+                    <p class="svc-ideal"><strong>Ideal para:</strong> comercios, emprendimientos y campañas locales.</p>
+                    <a class="svc-link" data-whatsapp="Hola, me interesa el servicio de Publicidad. ¿Me pueden dar más información?" target="_blank" rel="noopener">Consultar este servicio →</a>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                    <h3>Difusión digital</h3>
+                    <p class="svc-benefit">Multiplica el alcance de tus comunicados sin tener que manejar las redes tú mismo.</p>
+                    <ul><li><i class="fa-solid fa-circle-check"></i> Difusión en Facebook, Instagram, YouTube y X</li><li><i class="fa-solid fa-circle-check"></i> Comunicados y boletines</li><li><i class="fa-solid fa-circle-check"></i> Reporte de alcance e interacción</li></ul>
+                    <p class="svc-ideal"><strong>Ideal para:</strong> organizaciones con noticias que contar.</p>
+                    <a class="svc-link" data-whatsapp="Hola, me interesa el servicio de Difusión digital. ¿Me pueden dar más información?" target="_blank" rel="noopener">Consultar este servicio →</a>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PAQUETES -->
+
+    <section class="about-block alt">
+        <div class="container">
+
+            <div class="block-head">
+                <span class="section-label">PAQUETES Y TARIFAS</span>
+                <h2>Precios claros, sin sorpresas</h2>
+                <p class="block-sub">Tarifas estimadas en pesos colombianos. El valor final se ajusta a tu necesidad.</p>
+            </div>
+
+            <!-- REEMPLAZA los $000.000 por tus tarifas reales y ajusta lo que incluye cada paquete -->
+            <div class="plans">
+
+                <article class="plan">
+                    
+                    <h3>Emprendedor</h3>
+                    <p class="plan-for">Para negocios que empiezan a darse a conocer</p>
+                    <div class="plan-price"><small>Desde</small> $000.000 <small>COP</small></div>
+                    <p class="plan-note">Precio por mes · ajustable a tu necesidad</p>
+                    <ul><li><i class="fa-solid fa-check"></i> [1] publicación informativa o nota patrocinada</li><li><i class="fa-solid fa-check"></i> Difusión en nuestras redes sociales</li><li><i class="fa-solid fa-check"></i> Diseño básico de la pieza</li><li><i class="fa-solid fa-check"></i> Informe simple de alcance</li></ul>
+                    <a class="btn btn-primary" data-whatsapp="Hola, quiero pedir un presupuesto del paquete Emprendedor." target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i> Pedir presupuesto
+                    </a>
+                </article>
+                <article class="plan featured">
+                    <span class="plan-badge">Más elegido</span>
+                    <h3>Profesional</h3>
+                    <p class="plan-for">Para empresas que quieren presencia constante</p>
+                    <div class="plan-price"><small>Desde</small> $000.000 <small>COP</small></div>
+                    <p class="plan-note">Precio por mes · el más equilibrado</p>
+                    <ul><li><i class="fa-solid fa-check"></i> [4] publicaciones o notas al mes</li><li><i class="fa-solid fa-check"></i> Cobertura de [1] evento</li><li><i class="fa-solid fa-check"></i> Video corto para redes</li><li><i class="fa-solid fa-check"></i> Difusión en todos nuestros canales</li><li><i class="fa-solid fa-check"></i> Informe mensual de resultados</li></ul>
+                    <a class="btn btn-red" data-whatsapp="Hola, quiero pedir un presupuesto del paquete Profesional." target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i> Pedir presupuesto
+                    </a>
+                </article>
+                <article class="plan">
+                    
+                    <h3>Institucional</h3>
+                    <p class="plan-for">Para gobiernos, gremios y grandes marcas</p>
+                    <div class="plan-price"><small>Desde</small> A cotizar <small>COP</small></div>
+                    <p class="plan-note">Diseñado a la medida de tu campaña</p>
+                    <ul><li><i class="fa-solid fa-check"></i> Cobertura periodística ilimitada de eventos</li><li><i class="fa-solid fa-check"></i> Producción audiovisual completa</li><li><i class="fa-solid fa-check"></i> Campaña publicitaria multicanal</li><li><i class="fa-solid fa-check"></i> Asesor de comunicaciones dedicado</li><li><i class="fa-solid fa-check"></i> Informes y reunión de seguimiento</li></ul>
+                    <a class="btn btn-primary" data-whatsapp="Hola, quiero pedir un presupuesto del paquete Institucional." target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i> Pedir presupuesto
+                    </a>
+                </article>
+            </div>
+
+            <p class="plans-foot">¿Necesitas algo distinto? Armamos un paquete a tu medida.</p>
+
+        </div>
+    </section>
+
+
+    <!-- PRUEBA SOCIAL -->
+
+    <section class="about-block proof">
+        <div class="container">
+
+            <div class="block-head">
+                <span class="section-label">RESULTADOS</span>
+                <h2>Casos de éxito y opiniones de clientes</h2>
+            </div>
+
+            <!-- REEMPLAZA por casos reales -->
+            <div class="cases">
+                <article class="case-card">
+                    <span class="case-tag">Caso de éxito</span>
+                    <h3>[Nombre del cliente]</h3>
+                    <p><strong>Reto:</strong> [qué necesitaba el cliente].</p>
+                    <p><strong>Solución:</strong> [qué servicio o paquete usó].</p>
+                    <p class="case-result"><i class="fa-solid fa-arrow-trend-up"></i> [Resultado: alcance, ventas, visitas…]</p>
+                </article>
+                <article class="case-card">
+                    <span class="case-tag">Caso de éxito</span>
+                    <h3>[Nombre del cliente]</h3>
+                    <p><strong>Reto:</strong> [qué necesitaba el cliente].</p>
+                    <p><strong>Solución:</strong> [qué servicio o paquete usó].</p>
+                    <p class="case-result"><i class="fa-solid fa-arrow-trend-up"></i> [Resultado: alcance, ventas, visitas…]</p>
+                </article>
+            </div>
+
+            <div class="testimonials">
+                <figure class="testimonial">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>Escribe aquí el testimonio real de un cliente.</blockquote>
+                    <figcaption><strong>Nombre Apellido</strong><span>Cargo · Empresa</span></figcaption>
+                </figure>
+                <figure class="testimonial">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>Escribe aquí el testimonio real de un cliente.</blockquote>
+                    <figcaption><strong>Nombre Apellido</strong><span>Cargo · Empresa</span></figcaption>
+                </figure>
+                <figure class="testimonial">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>Escribe aquí el testimonio real de un cliente.</blockquote>
+                    <figcaption><strong>Nombre Apellido</strong><span>Cargo · Empresa</span></figcaption>
+                </figure>
+            </div>
+
+            <p class="partners-title">Marcas que han trabajado con nosotros</p>
+            <div class="partners">
+                <div class="partner">Logo cliente</div>
+                <div class="partner">Logo cliente</div>
+                <div class="partner">Logo cliente</div>
+                <div class="partner">Logo cliente</div>
+                <div class="partner">Logo cliente</div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA FINAL -->
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Cuéntanos qué necesitas y te respondemos hoy</h2>
+            <p>Sin compromiso: te enviamos una propuesta clara con precio y alcance.</p>
+            <div class="cta-row">
+                <a class="btn btn-white" data-whatsapp="Hola, quiero pedir un presupuesto." target="_blank" rel="noopener"><i class="fa-solid fa-file-invoice-dollar"></i> Pedir presupuesto</a>
+                <a class="btn btn-white" data-whatsapp="Hola, quisiera agendar una cita." target="_blank" rel="noopener"><i class="fa-regular fa-calendar-check"></i> Agendar una cita</a>
+                <button class="btn btn-ghost light" data-page="contacto"><i class="fa-solid fa-envelope"></i> Contactar</button>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+</main>
+
+
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-inner">
+
+
+        <div>
+
+            <strong>
+                CENTRO NOTICIAS HUILA
+            </strong>
+
+            <p>
+                La información que conecta al Huila.
+            </p>
+
+        </div>
+
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+                href="#"
+                id="footerWhatsapp"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Centro Noticias Huila
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
